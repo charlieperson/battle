@@ -12,5 +12,4 @@ feature 'Enter names' do
     expect(page).to have_content 'Johnny Cash vs. Timmy Jones'
   end
 
-
 end
