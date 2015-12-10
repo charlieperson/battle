@@ -6,6 +6,7 @@ feature 'Enter names' do
   scenario 'allows players to see eachothers hit points' do
     sign_in_and_play
     expect(page).to have_content 'Johnny Cash: 60HP'
+    expect(page).to have_content 'Timmy Jones: 60HP'
   end
 
 end

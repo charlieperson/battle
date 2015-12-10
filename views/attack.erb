@@ -1,1 +1,7 @@
-<%= @player_2.name %> HP: <%= @player_2.hp %>
+<%= @game.turn.name %> HP: <%= @game.turn.hp %>
+<% if @game.turn.hp == 0 %>
+<br>
+<h1><%= @game.turn.name %> lost!</h1>
+<br>
+<% end %>
+<a href="/play">OK</a>
