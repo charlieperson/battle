@@ -5,7 +5,8 @@ feature "duduct points" do
   # I want my attack to reduce Player 2's hp
   scenario "reduce player's hp when attacked" do
     sign_in_and_play
-    expect(page).to have_content"Timmy Jones' hp has been reduced by 10"
+    click_link('Attack!')
+    expect(page).to have_content"Timmy Jones HP: 50"
   end
 
 end

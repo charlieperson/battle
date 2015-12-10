@@ -7,7 +7,7 @@ feature 'Enter names' do
   scenario 'confirm player 2 has been attacked' do
     sign_in_and_play
     click_link('Attack!')
-    expect(page).to have_content 'Timmy Jones has been attacked by Johnny Cash!'
+    expect(page).to have_content 'Timmy Jones HP: 50'
   end
 
 end
