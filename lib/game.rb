@@ -23,7 +23,7 @@ class Game
   end
 
   def game_over?(player)
-    return true if player.hp == 0
+    return true if player.hp <= 0
   end
 
 end

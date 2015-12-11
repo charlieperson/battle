@@ -1,6 +1,5 @@
 class Player
   attr_reader :name, :hp
-  DEFAULT_DAMAGE = 10
   DEFAULT_HP     = 60
 
   def initialize(name)
@@ -9,7 +8,7 @@ class Player
   end
 
   def receive_damage
-    @hp -= DEFAULT_DAMAGE
+    @hp -= Kernel.rand(30)
   end
 
 end

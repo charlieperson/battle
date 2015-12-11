@@ -6,7 +6,7 @@ feature 'Enter names' do
   # I want to attack Player 2, and I want to get a confirmation
   scenario 'confirm player 2 has been attacked' do
     sign_in_and_play
-    click_link('Attack!')
+    click_button('Attack!')
     expect(page).to have_content 'Timmy Jones HP: 50'
   end
 
@@ -15,9 +15,9 @@ feature 'Enter names' do
   # I want Player 2 to attack me, and I want to get a confirmation
   scenario 'confirm player 1 has been attacked' do
     sign_in_and_play
-    click_link('Attack!')
+    click_button('Attack!')
     click_link('OK')
-    click_link('Attack!')
+    click_button('Attack!')
     expect(page).to have_content 'Johnny Cash HP: 50'
   end
 

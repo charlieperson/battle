@@ -10,7 +10,7 @@ feature "switch turns" do
 
   scenario "once player 1 has had their turn, switch turns" do
     sign_in_and_play
-    click_link('Attack!')
+    click_button('Attack!')
     click_link('OK')
     expect(page).to have_content"It's Timmy Jones's turn"
   end

@@ -6,10 +6,10 @@ feature 'Losing' do
   scenario 'force a player to lose' do
     sign_in_and_play
     10.times do
-      click_link('Attack!')
+      click_button('Attack!')
       click_link('OK')
     end
-      click_link('Attack!')
+      click_button('Attack!')
       expect(page).to have_content 'Timmy Jones lost!'
   end
 end

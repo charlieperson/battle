@@ -30,7 +30,7 @@ describe Game do
   describe '#game_over?' do
     it 'returns true if a player has 0 points' do
       allow(player_1).to receive(:hp).and_return(0)
-      expect(game.game_over?).to eq true
+      expect(game.game_over?(player_1)).to eq true
     end
   end
 
