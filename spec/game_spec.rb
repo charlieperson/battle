@@ -27,4 +27,11 @@ describe Game do
     expect{game.switch_turn}.to change{ game.turn }.to eq player_2
   end
 
+  describe '#game_over?' do
+    it 'returns true if a player has 0 points' do
+      allow(player_1).to receive(:hp).and_return(0)
+      expect(game.game_over?).to eq true
+    end
+  end
+
 end

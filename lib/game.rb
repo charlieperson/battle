@@ -22,4 +22,8 @@ class Game
     players.select { |player| player != current_player }.first
   end
 
+  def game_over?(player)
+    return true if player.hp == 0
+  end
+
 end
